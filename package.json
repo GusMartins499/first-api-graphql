@@ -4,16 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "yarn nodemon --exec babel-node src/index.js"
+    "dev": "yarn nodemon --exec babel-node src/index.js -e js,gql"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/node": "^7.16.0",
-    "@babel/preset-env": "^7.16.0"
+    "@babel/preset-env": "^7.16.0",
+    "nodemon": "^2.0.14"
   },
   "dependencies": {
+    "@graphql-tools/load-files": "^6.5.2",
+    "@graphql-tools/merge": "^8.2.1",
     "apollo-server": "^3.4.0",
-    "graphql": "^16.0.1"
+    "graphql": "^16.0.1",
+    "mongoose": "^6.0.12"
   }
 }
