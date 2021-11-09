@@ -1,4 +1,4 @@
 import { startServer } from "../startServer";
-import { typeDefs, resolvers } from './graphql';
+import { typeDefs, resolvers } from "./graphql";
 
 startServer({ typeDefs, resolvers });

@@ -2,7 +2,7 @@ import { ApolloServer } from "apollo-server";
 import mongoose from "mongoose";
 
 async function startServer({ typeDefs, resolvers }) {
-   mongoose
+  mongoose
     .connect("mongodb://localhost:27017/graphql")
     .then(() => console.log("🔥 Connected database"));
 
