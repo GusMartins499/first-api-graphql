@@ -17,7 +17,3 @@ const Schema = new mongoose.Schema({
 });
 
 export default mongoose.model("Post", Schema);
-
-/* const PostModel = mongoose.model("Post", Schema);
-
-export { PostModel }; */

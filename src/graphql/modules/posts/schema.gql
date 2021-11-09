@@ -8,7 +8,7 @@ type Post {
 input PostInput {
   title: String!
   content: String!
-  author: UserInput!
+  author: ID!
 }
 
 type Query {

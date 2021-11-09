@@ -8,7 +8,7 @@ type Post {
 input PostInput {
   title: String!
   content: String!
-  author: UserInput!
+  author: ID!
 }
 
 type Query {
@@ -31,6 +31,7 @@ type User {
   _id: ID!
   firstName: String!
   lastName: String!
+  fullName: String!
   email: String!
   active: Boolean!
 }
@@ -39,7 +40,7 @@ input UserInput {
   firstName: String!
   lastName: String!
   email: String!
-  active: Boolean
+  active: Boolean!
 }
 
 schema {
